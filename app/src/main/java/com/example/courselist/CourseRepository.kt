@@ -1,5 +1,4 @@
 package com.example.courselist
 
-class Course
-{
+class CourseRepository {
 }
