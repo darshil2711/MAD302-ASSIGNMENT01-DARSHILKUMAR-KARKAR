@@ -1,0 +1,92 @@
+Index: app/src/main/java/com/example/courselist/CourseRepository.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.courselist\r\n\r\nclass CourseRepository {\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/courselist/CourseRepository.kt b/app/src/main/java/com/example/courselist/CourseRepository.kt
+--- a/app/src/main/java/com/example/courselist/CourseRepository.kt	(revision 2fb4780c32d7a4769416584d68f96df0f86feed9)
++++ b/app/src/main/java/com/example/courselist/CourseRepository.kt	(date 1773459023070)
+@@ -1,4 +1,49 @@
+ package com.example.courselist
+ 
+-class CourseRepository {
++/**
++ * Repository class that provides a list of courses.
++ */
++object CourseRepository {
++
++    fun getCourses(): List<Course> {
++
++        return listOf(
++
++            Course(
++                "MAD302",
++                "Android Development",
++                "Learn how to build Android applications using Kotlin and Android Studio."
++            ),
++
++            Course(
++                "MAD301",
++                "Mobile UI Design",
++                "Design modern and responsive mobile interfaces."
++            ),
++
++            Course(
++                "MAD303",
++                "iOS Development",
++                "Introduction to building iOS apps using Swift."
++            ),
++
++            Course(
++                "MAD304",
++                "Mobile Security",
++                "Understand mobile vulnerabilities and secure app development."
++            ),
++
++            Course(
++                "MAD305",
++                "Cloud Mobile Integration",
++                "Connect mobile apps to cloud services like Firebase."
++            ),
++
++            Course(
++                "MAD306",
++                "Mobile Game Development",
++                "Learn fundamentals of creating mobile games."
++            )
++        )
++    }
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/courselist/Course.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.courselist\r\n\r\nclass Course\r\n{\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/courselist/Course.kt b/app/src/main/java/com/example/courselist/Course.kt
+--- a/app/src/main/java/com/example/courselist/Course.kt	(revision 2fb4780c32d7a4769416584d68f96df0f86feed9)
++++ b/app/src/main/java/com/example/courselist/Course.kt	(date 1773458981458)
+@@ -1,5 +1,18 @@
++/**
++ * Course: MAD302 Android Development
++ * Assignment: Assignment 1
++ * Name: Darshilkumar Karkar
++ * Student ID: A00203357
++ * Date: 29 March 2026
++ *
++ * Description:
++ * Data class representing a course object used in the application.
++ */
++
+ package com.example.courselist
+ 
+-class Course
+-{
+-}
+\ No newline at end of file
++data class Course(
++    val code: String,
++    val name: String,
++    val description: String
++)
+\ No newline at end of file

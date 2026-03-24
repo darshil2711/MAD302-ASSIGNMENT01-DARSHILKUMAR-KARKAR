@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Material Design Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorBackground">#F8F9FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorError">#B00020</color>
+
+    <!-- Custom Text Colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#616161</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradientStart">#6200EE</color>
+    <color name="gradientEnd">#9575CD</color>
 </resources>
